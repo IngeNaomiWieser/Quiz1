@@ -1,0 +1,44 @@
+html {
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  /*background-color: whitesmoke;*/
+}
+
+* {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.header_image {
+  margin-top: 10px;
+  width: 70px;
+  height: 60px;
+}
+
+.header_text {
+  margin-top: 10px;
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
+#home_navbar {
+  border-bottom: thin black solid;
+  height: 80px;
+  z-index: 1;
+  background-color: white;
+}
+
+.home {
+  height: 100vh;
+  background: url("/images/sunrise.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.awesome_text {
+  font-weight: bold;
+  font-size: 50px;
+}
