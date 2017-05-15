@@ -1,6 +1,69 @@
 <%- include('./partials/header') %>
 
-<h1>Hello World</h1>
+<nav id="home_navbar" class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class="header_image" src="/images/home.png">
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/" class="header_text">HOME</a></li>
+        <li><a href="/dashboard" class="header_text">DASHBOARD</a></li>
+      </ul>
+  </div>
+</nav>
+
+<br><br><br><br>
+
+<div class="container-fluid">
+  <form method='post'>
+
+    <div class="form-group row">
+      <input class="username_form col-xs-offset-2 col-xs-2" name="name"type="text" placeholder="username">
+    </div>
+
+    <div class="form-group row message_div">
+      <textarea class="message_form col-xs-10" name="message" rows="5" placeholder="Write message here"></textarea>
+    </div>
+
+    <div class="row">
+      <br>
+      <input class="col-xs-offset-9 btn btn-primary" type="submit" name="submit" Value="Submit">
+    </div>
+  </form>
+</div>
+
+<div>
+
+
+<div class="container-fluid">
+    <div class="form-group row">
+      <div class="tweet_div col-xs-10">
+        <h6>John Snow</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="tweet_div col-xs-10">
+        <h6>Tyrrion Lannister</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="tweet_div col-xs-10">
+        <h6>Cercei Lannister</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+</div>
+
 
 
 

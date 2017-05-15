@@ -11,6 +11,7 @@ html {
 
 .header_image {
   margin-top: 10px;
+  margin-left: 10px;
   width: 70px;
   height: 60px;
 }
@@ -41,4 +42,44 @@ html {
 .awesome_text {
   font-weight: bold;
   font-size: 50px;
+}
+
+.navbar-toggle {
+  margin-top: 20px;
+  background-color: black;
+}
+
+.icon-bar {
+  background-color: white;
+}
+
+form {
+  margin: 30px;
+  border: thin black solid;
+}
+
+.username_form {
+  border: thin black solid;
+  margin-left: 50px;
+  margin-top: 30px;
+  width: auto;
+}
+
+.message_div {
+  margin-top: 10px;
+}
+
+.message_form {
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  margin-bottom: 10px;
+}
+
+.tweet_div {
+  border: thin black solid;
+  margin-left: 45px;
 }
