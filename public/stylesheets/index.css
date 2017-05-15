@@ -82,4 +82,44 @@ form {
 .tweet_div {
   border: thin black solid;
   margin-left: 45px;
+  margin-right: 45px;
+}
+
+.profile_div {
+  border: thin black solid;
+  margin: 30px;
+}
+
+h2 {
+  margin: 30px;
+}
+
+.tweet_list_div {
+  margin: 30px;
+  border: thin black solid;
+}
+
+.tweet_list_div p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile_img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  float: left;
+}
+
+.name_username {
+  margin-top:40px;
+}
+
+h4 {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+#number12 {
+  margin-left: 50px;
 }
