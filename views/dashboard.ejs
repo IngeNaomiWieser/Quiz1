@@ -3,14 +3,14 @@
 <nav id="home_navbar" class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#targetNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <img class="header_image" src="/images/home.png">
     </div>
-    <div class="collapse navbar-collapse" id="navbar">
+    <div class="collapse navbar-collapse" id="#targetNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/" class="header_text">HOME</a></li>
         <li><a href="/dashboard" class="header_text">DASHBOARD</a></li>
@@ -20,7 +20,7 @@
 
 <br><br><br><br>
 
-<div class="container-fluid hidden-xs col-sm-6">
+<div class="container-fluid hidden-xs col-sm-4">
   <div class="profile_div">
     <img class="profile_img" src="/images/Dannie.jpg">
     <div class="name_username">
@@ -43,7 +43,7 @@
   </div>
 </div>
 
-<div class="container-fluid col-xs-12 col-sm-6">
+<div class="container-fluid col-xs-12 col-sm-8">
   <form method='post'>
 
     <div class="form-group row">
@@ -51,7 +51,7 @@
     </div>
 
     <div class="form-group row message_div">
-      <textarea class="message_form col-xs-10" name="message" rows="5" placeholder="Write message here"></textarea>
+      <textarea class="message_form col-xs-10" name="message" rows="5" maxlength="255" placeholder="Write message here"></textarea>
     </div>
 
     <div class="row">
@@ -61,34 +61,18 @@
   </form>
 </div>
 
-<div>
-
-
-<div class="container-fluid col-xs-12 col-sm-6">
-    <div class="form-group row">
+<div class="container-fluid col-xs-12 col-sm-8">
+  <div class="form-group row">
+    <% for (let i=0; i < names.length; i++) { %>
       <div class="tweet_div">
-        <h6>John Snow</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="birdie_div">
+          <img class="birdie" src="/images/birdie.jpg">
+        </div>
+      <h6> <%= names[i] %> </h6>
+      <p> <%= messages[i] %> </p>
       </div>
-    </div>
-
-    <div class="form-group row">
-      <div class="tweet_div">
-        <h6>Tyrrion Lannister</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <div class="tweet_div">
-        <h6>Cercei Lannister</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
+    <% } %>
+  </div>
 </div>
-
-
-
-
 
 <%- include('./partials/footer') %>

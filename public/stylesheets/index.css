@@ -7,6 +7,7 @@ html {
 * {
   font-family: inherit;
   font-weight: inherit;
+  border-radius: 5px;
 }
 
 .header_image {
@@ -83,6 +84,7 @@ form {
   border: thin black solid;
   margin-left: 45px;
   margin-right: 45px;
+  margin-bottom: 30px;
 }
 
 .profile_div {
@@ -122,4 +124,16 @@ h4 {
 
 #number12 {
   margin-left: 50px;
+}
+
+.birdie_div {
+  width: 70px;
+  height: 100%;
+  float: left;
+}
+
+.birdie {
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
 }
